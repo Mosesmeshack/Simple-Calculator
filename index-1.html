@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href= "plain.css" rel = "stylesheet" type="text/css"></style>
+		<title>Calculator</title>
+	</head>
+	<body>
+		<form name="calc">
+				<input type="text" name="calcDisplay" />
+				<br><br>
+				<input type="button" value="1" onclick="calc.calcDisplay.value+='1'">
+				<input type="button" value="2" onclick="calc.calcDisplay.value+='2'">
+				<input type="button" value="3" onclick="calc.calcDisplay.value+='3'">
+				<input type="button" value="+" onclick="calc.calcDisplay.value+='+'">
+				<br><br>
+				<input type="button" value="4" onclick="calc.calcDisplay.value+='4'">
+				<input type="button" value="5" onclick="calc.calcDisplay.value+='5'">
+				<input type="button" value="6" onclick="calc.calcDisplay.value+='6'">
+				<input type="button" value="-" onclick="calc.calcDisplay.value+='-'">
+				<br><br>
+				<input type="button" value="7" onclick="calc.calcDisplay.value+='7'">
+				<input type="button" value="8" onclick="calc.calcDisplay.value+='8'">
+				<input type="button" value="9" onclick="calc.calcDisplay.value+='9'">
+				<input type="button" value="*" onclick="calc.calcDisplay.value+='*'">
+				<br><br>
+				<input type="button" value="0" onclick="calc.calcDisplay.value+='0'">
+				<input type="button" value="=" onclick="calc.calcDisplay.value =eval(calc.calcDisplay.value)">
+				<input type="button" value="clr" onclick="calc.calcDisplay.value = ''" id="del">
+				<input type="button" value="/" onclick="calc.calcDisplay.value+='/'">
+				
+			
+		</form>
+	</body>
+	<script src="plain.js" type="text/javascript"></script>
+</html>
